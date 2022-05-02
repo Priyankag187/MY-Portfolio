@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:ital,wght@1,500&family=Orelega+One&family=Play&display=swap');
+
+.fnt{
+    font-family: 'Lora', serif;
+    font-weight:600;
+}
+.styl{
+    text-shadow: 3px 3px rgb(196, 247, 94);
+}
+body{
+    background-color: rgb(24, 23, 23) !important;
+    color: white !important;
+}
+ul, li{
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0.6rem 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* skill part */
+.skills .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+.skills{
+    padding: 5rem 0 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.skills h2{
+    text-shadow: 2px 2px rgb(72, 216, 180);
+}
+.skills> .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.skills .row{
+    margin: 1rem 0;
+}
+.skills .item{
+    padding:5px 0;
+    margin: 0.3rem 0;
+}
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+    font-family: 'Lora', serif;
+    color: white;
+}
+
+.skills .item-text span:last-child{
+    position: absolute;
+}
+.skills .item-text .w-90{
+    margin-left: 85%;
+}
+.skills .item-text .w-80{
+    margin-left: 75%;
+}
+.skills .item-text .w-60{
+    margin-left: 55%;
+}
+.skills .item-text .w-70{
+    margin-left: 65%;
+}
+.skills .item-text .w-40{
+    margin-left: 35%;
+}
+.skills .item-text .w-70{
+    margin-left: 65%;
+}
+.skills .item-text .w-30{
+    margin-left: 25%;
+}
+
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: gray;
+    overflow: hidden;
+    
+}
+.progress-bar{
+    background-color: rgb(49, 180, 49);
+    height: 100%;
+}
+.progress-bar.w-90{
+    width: 90%;
+}
+.progress-bar.w-80{
+    width: 80%;
+}
+.progress-bar.w-60{
+    width: 60%;
+}
+.progress-bar.w-70{
+    width: 70%;
+}
+.progress-bar.w-40{
+    width: 40%;
+}
+.progress-bar.w-70{
+    width: 70%;
+}
+.progress-bar.w-30{
+    width: 30%;
+}
+/* skill part end */
+
+/* footer */
+.footer{
+    padding: 2.5rem 0;
+    border-top:2px solid black ;
+}
+.ftr-ttle{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+.footer .col{
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer .col:first-child .text{
+    width: 80%;
+    margin: 0 auto;
+}
+.sclmda{
+    display: flex;
+    justify-content: center;
+}
+.sclmda a{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin: 1.5rem 0.3rem ;
+    
+}
+.sclmda a:hover{
+    background-color: black;  
+}
+.ftr-links a{
+    display: block;
+    text-transform: capitalize;
+    padding: 0.2rem 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    
+}
+.ftr-links a .fas{
+    display: none;
+}
+.ftr-links a:hover{
+    color: blue;
+}
+.footer .col:last-child div{
+    padding: 0.2rem 0;
+}
+.footer .col:last-child .fas{
+    padding-right: 0.5rem;
+}
+copyright .text{
+    text-align: center;
+}
+.footer .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media screen and (min-width: 768px) {
+    .footer .rw{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer .rw{
+        grid-template-columns: repeat(4,1fr);
+    }
+}

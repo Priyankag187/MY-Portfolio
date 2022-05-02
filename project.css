@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+/* 'Lora', serif */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:ital,wght@1,500&family=Orelega+One&family=Play&display=swap'); 
+/*  'Play', sans-serif */
+/* Nav bar */
+:root{
+    --clr: white;
+    --clr1:rgb(72, 216, 180);
+    --clr2:black;
+    --clr3:blue;
+}
+
+.fnt{
+    font-family: 'Lora', serif;
+    font-weight:600;
+}
+.styl{
+    text-shadow: 3px 3px rgb(196, 247, 94);
+}
+body{
+    background-color: rgb(24, 23, 23) !important;
+    color: white !important;
+}
+ul, li{
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0.6rem 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Project */
+.title > h2{
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-shadow: 2px 2px rgb(72, 216, 180);
+    padding: 5rem 0 2.5rem 0;
+}
+.project{
+    width: 70vw;
+    height: 30vh;
+    margin: 90px auto;
+    background-color: rgb(24, 23, 23) !important;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.project .small-proj{
+    width: 70vw;
+    height: 30vh;
+    
+    
+}
+.project .child1 img{
+    height: 29.5vh;
+    width: 30vw;
+    margin-right: 700px;
+    border-radius: 35px;
+    margin-top: -4rem;
+    transition: width 3s, height 3s;
+}
+.project .child1 img:hover{
+    height: 31.2vh;
+    width: 31.8vw;
+}
+
+.project .child1> p{
+    height: 29.5vh;
+    width: 39vw;
+    margin-left: 490px;
+    border-radius: 30px;
+    border: 2px solid blue;
+    margin-top: -14rem;
+    padding:5px;
+    overflow:auto;
+
+}
+.buton a{
+    text-decoration: none;
+    color: var(--clr);
+}
+button{
+    padding: 4px 3px;
+    border-radius: 15px;
+    background-color:  rgb(24, 23, 23);
+    font-weight: bold;
+    border: 1px solid var(--clr3);
+    font-size: 15px;
+    margin: 5px 5rem;
+    
+}
+button a:hover{
+    color: rgb(47, 225, 83);
+}
+
+
+
+
+/* footer */
+.footer{
+    padding: 2.5rem 0;
+    border-top:2px solid black ;
+    
+}
+.ftr-ttle{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+.footer .col{
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer .col:first-child .text{
+    width: 80%;
+    margin: 0 auto;
+}
+.sclmda{
+    display: flex;
+    justify-content: center;
+}
+.sclmda a{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin: 1.5rem 0.3rem;
+    
+}
+.sclmda a:hover{
+    background-color: black;  
+}
+.ftr-links a{
+    display: block;
+    text-transform: capitalize;
+    padding: 0.2rem 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    
+}
+.ftr-links a .fas{
+    display: none;
+}
+.ftr-links a:hover{
+    color: blue;
+}
+.footer .col:last-child div{
+    padding: 0.2rem 0;
+}
+.footer .col:last-child .fas{
+    padding-right: 0.5rem;
+}
+.copyright .text{
+    text-align: center;
+}
+.footer .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media screen and (min-width: 768px) {
+    /* footer */
+    .footer .rw{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* contact */
+    .contact-frm .grp{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+    .contact .row > div{
+        margin: 0;
+    }
+}
+@media screen and (min-width:992px) {
+    .contact .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-gap: 2rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer .rw{
+        grid-template-columns: repeat(4,1fr);
+    }
+}

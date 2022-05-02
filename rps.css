@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+/* 'Lora', serif */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:ital,wght@1,500&family=Orelega+One&family=Play&display=swap'); 
+/*  'Play', sans-serif */
+/* Nav bar */
+
+body{
+    background-color: rgb(24, 23, 23) !important;
+    color: white !important;
+}
+ul, li{
+    list-style-type:upper-latin;
+    margin-left: 2rem;
+    line-height: 2rem;
+    
+}
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0.6rem 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* description */
+.title > h2{
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-shadow: 2px 2px rgb(72, 216, 180);
+    padding: 5rem 0 2.5rem 0;
+}
+.container{
+    padding: 2.5rem 0 2.5rem 0;
+}
+.container .description{
+    margin: 1rem 5rem;
+    padding: 3rem 0;
+    width: 80vw;
+    text-align: justify;
+    color: rgb(138, 138, 231);
+    font-family: 'Play', sans-serif;
+}

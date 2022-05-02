@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:ital,wght@1,500&family=Orelega+One&family=Play&display=swap');
+/* Nav bar */
+.fnt{
+    font-family: 'Lora', serif;
+    font-weight:600;
+}
+.styl{
+    text-shadow: 3px 3px rgb(196, 247, 94);
+}
+body{
+    background-color: rgb(24, 23, 23) !important;
+    color: white !important;
+}
+ul, li{
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0.6rem 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* about */
+
+.about{
+    padding: 5rem 0 2.5rem 0;
+}
+.about .row-right{
+    padding: 3rem 0;
+}
+.about .row-right{
+    margin: 1rem 0;
+}
+.about-content{
+    margin: 1.5rem 0;
+}
+.about-content li{
+    display: flex;
+    margin: 0.6rem 0;
+}
+.about-content li span{
+    flex: 1;
+}
+.about-content li span:first-child{
+    font-weight: bold;
+}
+.about-content li a{
+    color: white;
+    text-decoration: none;
+    flex: 1;
+}
+.about-content li a:hover{
+    color: blue;
+}
+.about-content li a:link{
+    color: red;
+}
+.title{
+    position: relative;
+}
+.title > h2{
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-shadow: 2px 2px rgb(72, 216, 180);
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.buton button{
+    padding: 4px 3px;
+    border-radius: 15px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin: 5px 5px;
+}
+button:hover{
+    background-color: black;
+    color: red;
+}
+
+
+/* footer */
+.footer{
+    padding: 2.5rem 0;
+    border-top:2px solid black ;
+    
+}
+.ftr-ttle{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+.footer .col{
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer .col:first-child .text{
+    width: 80%;
+    margin: 0 auto;
+}
+.sclmda{
+    display: flex;
+    justify-content: center;
+}
+.sclmda a{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin: 1.5rem 0.3rem;
+    
+}
+.sclmda a:hover{
+    background-color: black;  
+}
+.ftr-links a{
+    display: block;
+    text-transform: capitalize;
+    padding: 0.2rem 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    
+}
+.ftr-links a .fas{
+    display: none;
+}
+.ftr-links a:hover{
+    color: blue;
+}
+.footer .col:last-child div{
+    padding: 0.2rem 0;
+}
+.footer .col:last-child .fas{
+    padding-right: 0.5rem;
+}
+.copyright .text{
+    text-align: center;
+}
+.footer .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media screen and (min-width: 768px) {
+    /* footer */
+    .footer .rw{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* about */
+    .about .row-left{
+        width: 400px;
+        height: 270px;
+        margin: 1rem auto;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: black;
+    }
+}
+@media screen and (min-width:992px){
+    .about .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        grid-gap: 2rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer .rw{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
